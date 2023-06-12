@@ -20,12 +20,18 @@ class MainPage extends StatelessWidget {
           body: IndexedStack(
             index: controller.tabIndex,
             children: [
-              const FirstScreen(),
+              TweetScreen(),
               const SecondScreen(),
+              ThirdScreen(),
               ThirdScreen(),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
+            // type: BottomNavigationBarType.fixed,
+            // fixedColor: Colors.blue,
+            // backgroundColor: Colors.blue,
+            selectedItemColor: Colors.blue,
+            unselectedItemColor: Colors.grey,
             onTap: controller.changeTabIndex,
             currentIndex: controller.tabIndex,
             items: const [
@@ -39,6 +45,10 @@ class MainPage extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person),
+                label: '',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.search),
                 label: '',
               ),
             ],
