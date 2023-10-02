@@ -4,6 +4,8 @@ import 'package:flutter_getx_example/V/widgets/push-tweets.dart';
 import '../../C/first-controller.dart';
 import 'package:get/get.dart';
 
+import 'add_tweets.dart';
+
 //  TweetScreen
 
 class TweetScreen extends StatelessWidget {
@@ -156,6 +158,7 @@ class TweetScreen extends StatelessWidget {
                       })),
                     ],
                   ),
+                 
                 ],
               ),
             ),

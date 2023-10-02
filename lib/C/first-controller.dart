@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 import '../M/tweets-model.dart';
@@ -72,6 +73,8 @@ class FirstScreenController extends GetxController {
     ),
   ].obs;
 
+  TextEditingController myController = TextEditingController();
+
   void changeisComment(int index) {
     tweets[index].isComment = !tweets[index].isComment;
     update();
@@ -91,5 +94,17 @@ class FirstScreenController extends GetxController {
     tweets[index].isRetweet = !tweets[index].isRetweet;
     update();
   }
-  
 }
+
+
+// tweets.add(  Post(
+//       UserName: 'Zoro',
+//       IdName: '@Zoro-_-',
+//       Text: 'Iam strong',
+//       Images: 'images/zoro.jpeg',
+//       ImageProfile: 'images/zoro.jpeg',
+//       isFavorite: false,
+//       isComment: false,
+//       isRetweet: false,
+//       isShare: false,
+//     ),)
